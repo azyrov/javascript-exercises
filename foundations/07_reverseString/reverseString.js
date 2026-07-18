@@ -1,5 +1,9 @@
-const reverseString = function() {
+// use split to convert string to array
+// use reverse to reverse strings
+// use join to to remove commas
 
+const reverseString = function(str) {
+    return str.split("").reverse().join("")
 };
 
 // Do not edit below this line
