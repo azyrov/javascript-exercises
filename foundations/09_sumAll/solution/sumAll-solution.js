@@ -1,11 +1,12 @@
 const sumAll = function (min, max) {
   if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
   if (min < 0 || max < 0) return "ERROR";
-  if (min > max) {
-    const temp = min;
-    min = max;
-    max = temp;
-  }
+  [max, min] = [min, max]; // this can replace entire if block below
+  // if (min > max) {
+  //   const temp = min;
+  //   min = max;
+  //   max = temp;
+  // }
 
   // An alternative way to swap the values of min and max like above is to use the array destructuring syntax.
   // Here's an optional article on it: https://www.freecodecamp.org/news/array-destructuring-in-es6-30e398f21d10/

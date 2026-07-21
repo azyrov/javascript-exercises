@@ -6,5 +6,8 @@ const reverseString = function(str) {
     return str.split("").reverse().join("")
 };
 
+// 2
+
+
 // Do not edit below this line
 module.exports = reverseString;

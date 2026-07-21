@@ -11,6 +11,4 @@ const leapYears = function (year) {
   } else {
     return false;
   }
-};
-
-module.exports = leapYears;
+}
