@@ -7,17 +7,17 @@
 
 const repeatString = function(string, num) {
 
-    let array = [string];
-
-    let strArray = array.flatMap((item => Array(num).fill(item)));
-
-    let finalResult = "";
-
-    for (let i = 0; i < strArray.length; i++) {
-        finalResult += strArray[i];
+    if (num < 0) {
+        return "ERROR"
     }
 
-    return finalResult;
+    let sum = "";
+
+    for (let i = 0; i < num; i++) {
+        sum += string;
+    }
+
+    return sum
 };
 
 // 2
