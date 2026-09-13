@@ -19,21 +19,19 @@ const power = function(numOne, numTwo) {
 };
 
 const factorial = function(num) {
-  
-  let sum = 0;
 
-  for (let i = num; i > 2; --i) {
-
-    let reduced = (i - 1);
-
-    if (num === i) {
-      sum += num * reduced;
-    } else if (num > i) {
-      sum += sum * (reduced - 1);
-    } 
+  if ((num === 0) || (num === 1)) {
+    return 1
   }
 
-  return sum
+  let result = 1;
+
+  for (let i = 1;i <= num; i++) {
+
+    result *= i;
+  }
+
+  return result;
 };
 
 // Do not edit below this line
